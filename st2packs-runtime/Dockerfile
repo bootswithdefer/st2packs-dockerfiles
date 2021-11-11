@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.13
 
 ONBUILD VOLUME ["/opt/stackstorm/packs", "/opt/stackstorm/virtualenvs"]
 
