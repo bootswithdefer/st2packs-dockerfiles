@@ -1,9 +1,6 @@
 FROM alpine:3.13
 
-RUN apk fix && \
-    apk --update add rsync && \
-    rm -rf /var/lib/apt/lists/* && \
-    rm /var/cache/apk/*
+RUN apk add --no-cache rsync
 
 ONBUILD VOLUME ["/opt/stackstorm/packs", "/opt/stackstorm/virtualenvs"]
 
