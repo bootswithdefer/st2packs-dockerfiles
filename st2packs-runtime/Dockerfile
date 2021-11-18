@@ -1,4 +1,6 @@
-FROM alpine:3.8
+FROM alpine:3.13
+
+RUN apk add --no-cache rsync
 
 ONBUILD VOLUME ["/opt/stackstorm/packs", "/opt/stackstorm/virtualenvs"]
 
