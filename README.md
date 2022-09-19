@@ -39,10 +39,6 @@ RUN /opt/stackstorm/st2/bin/st2-pack-install ${PACKS}
 FROM stackstorm/st2packs:runtime
 ```
 
-If you have enabled the k8s Docker Registry using `docker-registry.enabled = true`
-in the Helm chart configuration `values.yaml` at https://github.com/stackstorm/stackstorm-ha,
-then set `<docker_registry>` to `localhost:5000`.
-
 # Helper images
 
 The `st2packs-builder` and `st2packs-runtime` directories each contain a Dockerfile for images that
